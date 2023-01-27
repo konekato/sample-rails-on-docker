@@ -35,7 +35,16 @@ docker-compose up　-d
 - http://localhost:3001/samples
 
 
-## Tips
+## Docker Tips
+### コマンドを打つ方法
+```sh
+docker-compose exec <コンテナ名> <コマンド>
+```
+- `<コンテナ名>` は、今回は `web` と `db` 。
+- `<コマンド>` は、 `web` であれば `rails s` や `db` であれば `mysql ...`など。
+
+下記では、主に具体例を載せているので一緒に参照すると分かりやすいかもしれない。
+
 ### Rails コンテナと MySQL コンテナそれぞれに入る方法
 ```sh
 docker-compose exec web bash

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>サンプルアプリケーション</title>
+</head>
+<body>
+  <h1>さんぷる</h1>
+  <table border="1">
+    <tbody>
+      <% @samples.each do |sample| %>
+        <tr>
+          <td><%= sample.id %></td>
+          <td><%= sample.name %></td>
+          <td><%= sample.number %></td>
+          <td><%= sample.content %></td>
+          <td><%= sample.created_at %></td>
+          <td><%= sample.updated_at %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</body>
+</html>

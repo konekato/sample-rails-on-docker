@@ -70,6 +70,17 @@ docker-compose exec db mysql -h 127.0.0.1 -P 3306 -u root -p
 Enter password:
 ```
 
+### Windows で Docker 環境構築時のエラー対処法【no such file or directory】
+Windowsで環境構築を試してみた時に、`docker-compose build`で、
+
+```sh
+docker-entrypoint.sh: no such file or directory
+```
+
+というエラー文が出た。それは、以下を参照して対処した。
+
+[Windows で Docker 環境構築時のエラー対処法【no such file or directory】](https://kakiblo.com/docker-windows/)
+
 ---
 
 # 備忘録
